@@ -525,6 +525,7 @@ void AerialMapDisplay::transformAerialMap() {
     // set the transform to identity on failure
     position = Ogre::Vector3::ZERO;
     orientation = Ogre::Quaternion::IDENTITY;
+    received_msg_ = false;
   } else {
     setStatus(StatusProperty::Ok, "Transform", "Transform OK");
   }
